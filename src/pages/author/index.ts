@@ -1,0 +1,1 @@
+export { default as AuthorPage } from './ui/index.vue'

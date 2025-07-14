@@ -1,0 +1,1 @@
+export { default as PostCard } from './ui/index.vue'
