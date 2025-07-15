@@ -1,7 +1,5 @@
-export interface Comment {
-    dateTime: string
+export interface SaveCommentDto {
     email: string
-    id: number
     textComment: string
     userInfo: string
 }

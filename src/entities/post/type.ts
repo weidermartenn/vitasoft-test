@@ -7,4 +7,6 @@ export interface Post {
     fullDescription: string
     id: number
     title: string
+
+    updatedAt?: string
 }

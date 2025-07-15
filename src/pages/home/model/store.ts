@@ -12,7 +12,7 @@ import {
   deletePost as apiDeletePost,
   updatePost,
   getPostInfo
-} from "./api";
+} from "@/shared/api/backendApi";
 import type { UpdatePostDto } from "@/entities/updatepostdto/type";
 
 export const useBlogStore = defineStore("blog", () => {
@@ -26,7 +26,6 @@ export const useBlogStore = defineStore("blog", () => {
       loading.value = true;
       error.value = null;
       users.value = await findAll();
-      console.log(users.value);
     } catch (err) {
       error.value =
         err instanceof Error ? err.message : "Ошибка получения данных";
